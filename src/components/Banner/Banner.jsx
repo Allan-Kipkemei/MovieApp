@@ -9,8 +9,8 @@ const Banner = ({ media }) => {
 
   const fetchBannerDetails = async () => {
     const res = await axios.get(
-      `https://api.themoviedb.org/3/discover/${media ? "tv" : "movie"
-      }?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&with_genres=28`
+      `https://api.themoviedb.org/3/movie/popular?api_key=791b6328c9d4bd3d9dd7b05a42c5c1c8&language=en-US&page=1
+`
     );
     setBanner(
       res.data.results[Math.floor(Math.random() * res.data.results.length - 1)]
