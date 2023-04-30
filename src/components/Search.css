@@ -1,0 +1,41 @@
+.search {
+  margin-left: 5px;
+}
+.search__area {
+  display: flex;
+  justify-content: center;
+}
+h3 {
+  margin: 20px 0;
+}
+.search__box {
+  width: 70%;
+  border: 0;
+  outline: 0;
+  border-bottom: 3px solid #ff0000;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 100px 5px 5px;
+  background-color: #111;
+}
+.search__icon {
+  position: absolute;
+  left: 11.5rem;
+}
+.searched__movies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  /* padding: 5px 0; */
+  row-gap: 10px;
+}
+@media (max-width: 800px) {
+  .search__area {
+    flex-wrap: nowrap;
+  }
+  .search__box {
+    width: 100%;
+  }
+}

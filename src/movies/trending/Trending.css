@@ -1,0 +1,16 @@
+.movie {
+  margin: 10px 15px;
+}
+.movie__content {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  overflow-x: scroll;
+}
+
+.title {
+  font-size: 2rem;
+  margin-left: 15px;
+  margin-bottom: 0;
+  padding-bottom: 8px;
+}

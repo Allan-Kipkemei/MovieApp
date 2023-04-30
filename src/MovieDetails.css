@@ -1,0 +1,155 @@
+.page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-y: auto;
+  z-index: 10;
+}
+.page__content {
+  position: relative;
+  padding: 30px 50px;
+  background-color: #111;
+  /* margin: 5% auto; */
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+}
+.page__upper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.other__page__content {
+  margin-top: 50px;
+  margin-left: 20px;
+  text-align: center;
+}
+.other__page__content h1,
+h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.other__page__content h2::before {
+  content: "(";
+}
+.other__page__content h2::after {
+  content: ")";
+}
+.tagline {
+  font-size: 20px;
+  padding: 10px 0;
+}
+.runtime__rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+.vote {
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 19px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+.runtime {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.poster_img {
+  object-fit: contain;
+  width: 250px;
+  height: 370px;
+  border: 0;
+  margin-top: 60px;
+  border-radius: 20px;
+}
+#details__poster {
+  box-shadow: 0.5em 0.8em 0.5em #8a8383;
+}
+.genres__lists {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+.genre__list {
+  font-size: 20px;
+  padding: 5px 18px;
+  margin: 5px;
+  background-color: #000;
+  border-radius: 30px;
+}
+.profile {
+  object-fit: contain;
+  width: 100%;
+  max-height: 150px;
+  border-radius: 10px;
+}
+.overview {
+  padding: 30px 0 20px 0;
+}
+.overview h3 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.overview p {
+  line-height: 1.3;
+}
+.actors h3 {
+  font-size: 25px;
+}
+.casts {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.cast__details {
+  width: 100px;
+  height: 250px;
+  text-align: start;
+  padding: 0;
+  margin-right: 15px;
+}
+.character {
+  color: gray;
+  line-height: 1.1;
+}
+.name {
+  line-height: 1.1;
+  margin-bottom: 2px;
+}
+.btn {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  margin-bottom: 20px;
+}
+.btn:hover {
+  transform: scaleY(1.06);
+}
+.trailer {
+  width: 100%;
+  padding: 0 20px;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
