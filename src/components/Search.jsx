@@ -13,9 +13,10 @@ const Search = () => {
 
   const searchMovies = async () => {
     const movies = await axios.get(
-      `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&query=${searchInput}&include_adult=false`
+      `https://api.themoviedb.org/3/search/movie?api_key=791b6328c9d4bd3d9dd7b05a42c5c1c8&language=en-US&query=${searchInput}&include_adult=false
+`
     );
-    //console.log(movies);
+    console.log(movies);
     setSearchedMovies(movies.data.results);
   };
 

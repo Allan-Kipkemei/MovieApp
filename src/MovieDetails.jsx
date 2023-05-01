@@ -18,7 +18,7 @@ const MovieDetails = () => {
   //fetching individual movie details
   const fetchMovieDetails = async () => {
     const data = await axios.get(
-      `https://api.themoviedb.org/3/movie/${params.id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
+      `https://api.themoviedb.org/3/movie/${params.id}?api_key=791b6328c9d4bd3d9dd7b05a42c5c1c8&language=en-US`
     );
     setMovie(data.data);
   };
@@ -26,7 +26,8 @@ const MovieDetails = () => {
   //fetching movie actors/casts
   const fetchTopCasts = async () => {
     const credits = await axios.get(
-      `https://api.themoviedb.org/3/movie/${params.id}/credits?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
+      `https://api.themoviedb.org/3/movie/${params.id}/credits?api_key=791b6328c9d4bd3d9dd7b05a42c5c1c8&language=en-US`
+
     );
     setCredits(credits.data.cast);
   };
@@ -34,7 +35,8 @@ const MovieDetails = () => {
   //fetching trailer ids
   const fetchTrailer = async () => {
     const video = await axios.get(
-      `https://api.themoviedb.org/3/movie/${params.id}/videos?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
+      `https://api.themoviedb.org/3/movie/${params.id}/videos?api_key=791b6328c9d4bd3d9dd7b05a42c5c1c8&language=en-US
+`
     );
     setVideo(video.data.results[2]?.key);
   };
