@@ -8,7 +8,7 @@ const TopRated = () => {
 
   const fetchTopRated = async () => {
     const res = await axios.get(
-      `https://api.themoviedb.org/3/movie/top_rated?api_key=REACT_APP_API_KEY`
+      `https://api.themoviedb.org/3/movie/top_rated?api_key=791b6328c9d4bd3d9dd7b05a42c5c1c8`
     );
     setTopRated(res.data.results);
     //console.log(res.data.results);
